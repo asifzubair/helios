@@ -47,11 +47,15 @@ Documentation
 ---------------------------------------
 
 <a name="queryBuilder" />
+
 ## helios.queryBuilder
+
 ### init
+
 ```js
 var queryBuilder = new Helios.queryBuilder();
 ```
+
 ### methods
 All the methods can be used together and can be get as a combined query string by using the `toString()` method
 
@@ -79,8 +83,11 @@ queryBuilder.facetQuery({
 It just returns the query you have made as a `string`
 
 <a name="client" />
+
 ## helios.client
+
 ### init
+
 It can be initialized by `helios.client()` or by passing an `options` Object as an argument like `helios.client(options)`.
 ```js
 try {
@@ -93,6 +100,7 @@ catch (e) {
   console.log(e);
 }
 ```
+
 `options` can have
 - `host`
 - `port`
@@ -239,7 +247,9 @@ solr_client.deleteDocByQuery('name:Peter', commit, 0, function(err) {
 ```
 
 <a name="document" />
+
 ## helios.document
+
 This class will ease the steps required to make a document to be added to solr.
 
 ### init
